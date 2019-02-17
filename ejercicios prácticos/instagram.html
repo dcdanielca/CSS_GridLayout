@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Instagram</title>
+    <style>
+        body{
+            margin:0;
+            font-family:  Arial, Helvetica, sans-serif
+        }
+        .post-list{
+            display: grid;
+            grid-template-columns: repeat(3, minmax(100px, 293px));
+            justify-content: center;
+            grid-gap: 28px
+        }
+        .post{
+            cursor: pointer;
+            position: relative;
+            display: block;
+        }
+        .post-image{
+            margin:0;
+            height: 100%;
+            width: 100%;
+        }
+        .post-image img{
+            width: 100%;
+            height: 100%;
+            vertical-align: top;
+            background-size: cover
+        }
+        .post-overlay{
+            background: rgba(0, 0, 0, .4);
+            position: absolute;
+            left: 0;;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center
+        }
+        .post:hover .post-overlay{
+            display: flex;
+        }
+        .post-likes, .post-comments{
+            width: 80px;
+            margin: 5px;
+            font-weight: bold;
+            text-align: center;
+            display: inline-block
+        }
+        @media screen and (max-width: 768px){
+            .post-list{
+                grid-gap:3px
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="post-list">
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="https://static5lonelyplanetes.cdnstatics.com/sites/default/files/fotos/Alemania_Berlin_Bode%20Museum_shutterstock_469614617_pixelklex_Shutterstock.jpg" alt="">
+            </figure>
+            <div class="post-overlay">
+                <p>
+                    <span class="post-likes">150</span>
+                    <span class="post-comments">10</span>
+                </p>
+            </div>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="http://cr00.epimg.net/emisora/imagenes/2018/02/13/medellin/1518555130_342199_1518555890_noticia_normal.jpg" alt="">
+            </figure>
+            <div class="post-overlay">
+                <p>
+                    <span class="post-likes">150</span>
+                    <span class="post-comments">10</span>
+                </p>
+            </div>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="https://www.ef.com/wwen/blog/wp-content/uploads/2017/09/Visit_Seoul_web.jpg" alt="">
+            </figure>
+            <div class="post-overlay">
+                <p>
+                    <span class="post-likes">150</span>
+                    <span class="post-comments">10</span>
+                </p>
+            </div>
+        </a>
+        <a href="" class="post">
+                <figure class="post-image">
+                    <img src="https://endimages.s3.amazonaws.com/cache/cd/d1/cdd17c19c1594671667b3a21e0dab22d.jpg" alt="">
+                </figure>
+                <div class="post-overlay">
+                    <p>
+                        <span class="post-likes">150</span>
+                        <span class="post-comments">10</span>
+                    </p>
+                </div>
+            </a>          
+            <a href="" class="post">
+                <figure class="post-image">
+                    <img src="https://images.clarin.com/2018/11/22/Az0o4AN5D_1256x620__1.jpg" alt="">
+                </figure>
+                <div class="post-overlay">
+                    <p>
+                        <span class="post-likes">150</span>
+                        <span class="post-comments">10</span>
+                    </p>
+                </div>
+            </a>    
+            <a href="" class="post">
+                <figure class="post-image">
+                    <img src="https://mng.xbloq.com/manager/admin/images/travels/piramides-egipto-el-cairo.jpg" alt="">
+                </figure>
+                <div class="post-overlay">
+                    <p>
+                        <span class="post-likes">150</span>
+                        <span class="post-comments">10</span>
+                    </p>
+                </div>
+            </a>
+            <a href="" class="post">
+                <figure class="post-image">
+                    <img src="https://www.travel-xperience.com/sites/default/files/escocia_accesible_en_silla_de_ruedas_0.jpg" alt="">
+                </figure>
+                <div class="post-overlay">
+                    <p>
+                        <span class="post-likes">150</span>
+                        <span class="post-comments">10</span>
+                    </p>
+                </div>
+            </a>
+            <a href="" class="post">
+                    <figure class="post-image">
+                        <img src="http://nuba-149d.kxcdn.com/wp-content/uploads/2014/11/01-Italia-1024x542.jpg" alt="">
+                    </figure>
+                    <div class="post-overlay">
+                        <p>
+                            <span class="post-likes">150</span>
+                            <span class="post-comments">10</span>
+                        </p>
+                    </div>
+                </a>          
+                <a href="" class="post">
+                    <figure class="post-image">
+                        <img src="https://nomadcapitalist.com/wp-content/uploads/2017/04/residence-citizenship-in-mongolia-700x466.jpg" alt="">
+                    </figure>
+                    <div class="post-overlay">
+                        <p>
+                            <span class="post-likes">150</span>
+                            <span class="post-comments">10</span>
+                        </p>
+                    </div>
+                </a>                                                    
+    </section>
+</body>
+</html>
